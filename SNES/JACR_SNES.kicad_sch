@@ -899,7 +899,7 @@
 				(pin power_out line
 					(at -12.7 -46.99 0)
 					(length 2.54)
-					(name "+5V"
+					(name "+3V3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -935,7 +935,7 @@
 				(pin power_out line
 					(at -12.7 -52.07 0)
 					(length 2.54)
-					(name "+12V"
+					(name "+5V"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1655,7 +1655,7 @@
 				(pin power_out line
 					(at 12.7 -52.07 180)
 					(length 2.54)
-					(name "+12V"
+					(name "+5V"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3325,6 +3325,10 @@
 		(uuid "014a9e02-aced-4b5b-a3a7-180b725bc292")
 	)
 	(no_connect
+		(at 34.29 43.18)
+		(uuid "17573c21-ef43-4228-8af9-f4b923e1d67b")
+	)
+	(no_connect
 		(at 59.69 132.08)
 		(uuid "181f76f8-18c2-4e32-82ad-bc7e678af93f")
 	)
@@ -3333,16 +3337,12 @@
 		(uuid "229889e9-e28b-4316-9d91-d404ed6a57a5")
 	)
 	(no_connect
-		(at 59.69 142.24)
-		(uuid "27c1e450-ba25-4c00-94a2-b829c9022435")
-	)
-	(no_connect
 		(at 34.29 48.26)
 		(uuid "289b1fd9-c0dc-4311-ad8b-ce48e4a94b47")
 	)
 	(no_connect
-		(at 34.29 43.18)
-		(uuid "33bf4ae9-9583-4727-a457-cc015a834844")
+		(at 59.69 43.18)
+		(uuid "2c16b8df-2973-4fd7-bc2c-9a983c9d5218")
 	)
 	(no_connect
 		(at 59.69 137.16)
@@ -3369,6 +3369,10 @@
 		(uuid "72cda1f2-3d44-4699-8d8e-27e1ec98c869")
 	)
 	(no_connect
+		(at 34.29 137.16)
+		(uuid "755d156b-fc9e-475c-97a5-c8a63286cc6d")
+	)
+	(no_connect
 		(at 106.68 132.08)
 		(uuid "7ab01c97-0a89-4a09-a922-c5ed645f2fc0")
 	)
@@ -3389,16 +3393,8 @@
 		(uuid "aa1f9e45-b1d5-4734-bdfb-416386274c3f")
 	)
 	(no_connect
-		(at 34.29 142.24)
-		(uuid "b16633ba-d550-4021-a2b5-b82f65a70e45")
-	)
-	(no_connect
 		(at 59.69 134.62)
 		(uuid "cf7072e7-ea18-4806-b405-dfcf72071fea")
-	)
-	(no_connect
-		(at 59.69 43.18)
-		(uuid "cfebaa6b-070e-4ac8-9f31-506497ac6f80")
 	)
 	(no_connect
 		(at 59.69 48.26)
@@ -6660,73 +6656,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 34.29 137.16 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0d51df4d-94fb-4a85-81ce-912eab042528")
-		(property "Reference" "#PWR08"
-			(at 38.1 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 30.48 137.1599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 34.29 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 34.29 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 34.29 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2a1afcca-7af4-47a7-a462-c4ce6fda15df")
-		)
-		(instances
-			(project ""
-				(path "/b312f5ab-7935-4830-b125-a7ec355c500e"
-					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Nintendo:SNES_Cartridge_Slot")
 		(at 127 91.44 0)
 		(unit 1)
@@ -6970,6 +6899,73 @@
 			(project ""
 				(path "/b312f5ab-7935-4830-b125-a7ec355c500e"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 59.69 142.24 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2ae4f7a9-908e-4a14-94a0-3925f331fa79")
+		(property "Reference" "#PWR013"
+			(at 55.88 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 63.5 142.2399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 59.69 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 59.69 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c31acc21-8154-440c-afc4-96e539b0e703")
+		)
+		(instances
+			(project "JACR_SNES"
+				(path "/b312f5ab-7935-4830-b125-a7ec355c500e"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -7809,6 +7805,73 @@
 			(project ""
 				(path "/b312f5ab-7935-4830-b125-a7ec355c500e"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 34.29 142.24 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "62be038e-4df2-4d27-a4e8-b32b19bd9520")
+		(property "Reference" "#PWR08"
+			(at 38.1 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 30.48 142.2399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.29 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.29 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 34.29 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3c37c311-eb1d-445c-b212-84eb3c5ebc1c")
+		)
+		(instances
+			(project ""
+				(path "/b312f5ab-7935-4830-b125-a7ec355c500e"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
